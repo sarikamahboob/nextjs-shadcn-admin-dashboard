@@ -6,4 +6,6 @@ bunx --bun shadcn@latest add button
 bunx --bun shadcn@latest add avatar
 bunx --bun shadcn@latest add dropdown-menu
 bunx --bun shadcn@latest add sidebar
+bunx --bun shadcn@latest add collapsible
+bunx --bun shadcn@latest add chart
 ```
