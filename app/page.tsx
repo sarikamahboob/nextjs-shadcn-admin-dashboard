@@ -1,7 +1,8 @@
+import AppAreaChart from "@/components/custom/AppAreaChart";
 import AppBarChart from "@/components/custom/AppBarChart";
-import { Button } from "@/components/ui/button";
-import { StepBack } from "lucide-react";
-import Image from "next/image";
+import AppPieChart from "@/components/custom/AppPieChart";
+import CardList from "@/components/custom/CardList";
+import TodoList from "@/components/custom/TodoList";
 
 export default function Home() {
   return (
@@ -9,11 +10,21 @@ export default function Home() {
       <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
         <AppBarChart />
       </div>
-      <div className="bg-primary-foreground p-4 rounded-lg"></div>
-      <div className="bg-primary-foreground p-4 rounded-lg"></div>
-      <div className="bg-primary-foreground p-4 rounded-lg"></div>
-      <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2"></div>
-      <div className="bg-primary-foreground p-4 rounded-lg"></div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <CardList title="Latest Transactions" />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <AppPieChart />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <TodoList />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-1 2xl:col-span-2">
+        <AppAreaChart />
+      </div>
+      <div className="bg-primary-foreground p-4 rounded-lg">
+        <CardList title="Popular Content" />
+      </div>
     </div>
   );
 }

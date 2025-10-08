@@ -6,6 +6,7 @@ import Navbar from "@/components/custom/Navbar";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { cookies } from "next/headers";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,11 @@ export default async function RootLayout({
   const defaultOpen = cookieStore.get("sidebar_state")?.value === "true"
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

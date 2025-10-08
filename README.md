@@ -8,4 +8,9 @@ bunx --bun shadcn@latest add dropdown-menu
 bunx --bun shadcn@latest add sidebar
 bunx --bun shadcn@latest add collapsible
 bunx --bun shadcn@latest add chart
+bunx --bun shadcn@latest add card
+bunx --bun shadcn@latest add badge
+bunx --bun shadcn@latest add checkbox
+bunx --bun shadcn@latest add calendar
+bunx --bun shadcn@latest add popover
 ```
